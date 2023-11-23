@@ -30,7 +30,6 @@ namespace DataAccess.Concrete.EntityFramework
                                  CategoryName = ca.CategoryName,
                                  InstructorName = i.InstructorName,
                                  CourseName = c.CourseName,
-                                 InstructorSurname = i.InstructorSurname
                              };
                 return result.ToList();
             }

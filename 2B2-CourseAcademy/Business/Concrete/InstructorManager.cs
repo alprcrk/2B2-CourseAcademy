@@ -2,6 +2,7 @@
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Instructor>> GetAll()
         {
-            return new SuccessDataResult<List<Instructor>>(_instructorDal.GetAll());
+            return new SuccessDataResult<List<Instructor>>(_instructorDal.GetAll(_instructorDal.GetAll(), Messages.InstructorsListed));
         }
 
         public IDataResult<List<Instructor>> GetByInstructorId(int id)

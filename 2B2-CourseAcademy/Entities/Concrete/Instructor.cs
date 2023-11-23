@@ -12,7 +12,6 @@ namespace Entities.Concrete
         public List<Course> courses = new List<Course>();
         public int InstructorId { get; set; }
         public string InstructorName { get; set; }
-        public string InstructorSurname { get; set; }
 
 
 
