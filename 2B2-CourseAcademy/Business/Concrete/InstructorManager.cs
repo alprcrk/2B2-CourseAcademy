@@ -38,7 +38,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Instructor>> GetAll()
         {
-            return new SuccessDataResult<List<Instructor>>(_instructorDal.GetAll(_instructorDal.GetAll(), Messages.InstructorsListed));
+            return new SuccessDataResult<List<Instructor>>(_instructorDal.GetAll(),Messages.InstructorsListed);
         }
 
         public IDataResult<List<Instructor>> GetByInstructorId(int id)

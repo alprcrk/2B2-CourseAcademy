@@ -35,6 +35,6 @@ namespace Business.Constants
 
         public static string CategoryListed = "Kategoriler Listelendi";
 
-        public static object InstructorsListed = "Eğitmenler Listelendi";
+        public static string InstructorsListed = "Eğitmenler Listelendi";
     }
 }
