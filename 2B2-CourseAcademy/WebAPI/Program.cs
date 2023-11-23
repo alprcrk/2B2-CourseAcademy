@@ -13,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ICategoryService, CategoryManager>();
 builder.Services.AddSingleton<ICategoryDal, EfCategoryDal>();
+builder.Services.AddSingleton<ICourseService, CourseManager>();
+builder.Services.AddSingleton<ICourseDal, EfCourseDal>();
 
 var app = builder.Build();
 

@@ -32,5 +32,7 @@ namespace Business.Constants
         public static string InstructorDeleted = "Eğitmen Silindi";
 
         public static string InstructorUpdated = "Eğitmen Güncllendi";
+
+        public static string CategoryListed = "Kategoriler Listelendi";
     }
 }
