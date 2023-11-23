@@ -1,0 +1,22 @@
+﻿using Core.Entities;
+using Entities.DTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entities.DTOs
+{
+    public class CourseDetailDto : IDto
+    {
+
+
+        public int Id { get; set; }
+        public string CourseName { get; set; }
+        public string InstructorName { get; set; }
+        public string CategoryName { get; set; }
+        public string InstructorSurname { get; set; }
+
+    }
+}
